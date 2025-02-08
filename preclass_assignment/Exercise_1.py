@@ -50,5 +50,5 @@ status_signals = [0, 1, 0, 2, 0]
 print("Starting Exercise 5")
 print(clean_pitch(pitch_angles, status_signals))
 
-
+print("Made changes to the file")
 #Some comment to add
