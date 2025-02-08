@@ -36,7 +36,7 @@ def fibonacci_stop(m):
 
 def corr_pitch(x, status):
     x = np.asarray(x)
-    i = np.argwhere(np.array(status)>0)
+    i = np.argwhere((np.array(status)>0) and (x<0 or x>90))
     x[i] = -999
     return x
     
