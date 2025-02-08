@@ -49,3 +49,6 @@ pitch_angles = [10, 95, 45, -5, 85]
 status_signals = [0, 1, 0, 2, 0]
 print("Starting Exercise 5")
 print(clean_pitch(pitch_angles, status_signals))
+
+
+#Some comment to add
