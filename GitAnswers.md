@@ -1,7 +1,3 @@
-# Project 0: Week 1 and Week 2
-
-This GitHub Assignment ("Project 0") is reused in Week 1 and Week 2. For details on what you should
-do each week, please see the corresponding subfolder in the main course repo.
 9. Should I from now on version my word and powerpoint slides using git? why/whynot?
 It might be okay to version small to medium sized documents but using git for binary files like word and powerpoint is not ideal because git cannot handle binary files efficently.
 
