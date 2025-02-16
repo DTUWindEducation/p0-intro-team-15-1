@@ -19,9 +19,12 @@ def test_greet(capsys):
 def test_goldilocks(capsys):
     """Check goldilocks returns expected output"""
     # given
+    a = 139 
     # when
+    fxn.goldilocks(a) 
+    captured = capsys.readouterr()
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests goldilocks
+    assert captured.out == 'Too Small!\n'
 
 
 def test_square_list():
