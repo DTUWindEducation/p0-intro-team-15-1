@@ -1,15 +1,15 @@
 #Exercise 1
 
 def greet(names):
-    for name in names:
-        print("Hello " + name)
+    for name in [names]:
+        print("Hello, " + name + "!")
 
 #Exercise 2
 def goldilocks(length):
     if length < 140:
-        print("The bed is too small.")
+        print("Too Small!")
     elif length > 150:
-        print("The bed is too big.")
+        print("Too Big!")
     else:
         print("The bed has a perfect size")
 
@@ -19,7 +19,7 @@ def square_list(numbers):
 
 #Exercise 4
 def fibonacci_stop(n):
-    fib_sequence = [0, 1]
+    fib_sequence = [1, 1]
     while True:
         next_fib = fib_sequence[-1] + fib_sequence[-2]
         if next_fib > n:
