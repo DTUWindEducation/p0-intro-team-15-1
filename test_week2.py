@@ -1,6 +1,6 @@
 """Test your functions from Week 2 assignment.
 """
-import preclass_assignment.week00_prep_answers as fxn
+import functions as fxn
 import numpy as np
 
 
@@ -19,9 +19,12 @@ def test_greet(capsys):
 def test_goldilocks(capsys):
     """Check goldilocks returns expected output"""
     # given
+    a = 139
     # when
+    fxn.goldilocks(a)
+    captured = capsys.readouterr()
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests goldilocks
+    assert captured.out == 'Too Small!\n'
 
 
 def test_square_list():
@@ -69,6 +72,7 @@ def test_clean_pitch():
     corr_angles = angles
     corr_angles[i_tbc] = -999
     # when
-    corr_angles_func = fxn.clean_pitch(x=angles, status=status)
+    corr_angles_func = fxn.clean_pitch(pitch_angles=angles,
+                                       status_signals=status)
     # then
     assert np.array_equal(corr_angles, corr_angles_func), "Wrong results"

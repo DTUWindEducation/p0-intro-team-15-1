@@ -37,6 +37,7 @@ print(fibonacci_stop(35))
 
 #Exercise 5
 def clean_pitch(pitch_angles, status_signals):
+    
     cleaned_angles = []
     for angle, status in zip(pitch_angles, status_signals):
         if (angle < 0 or angle > 90) and status > 0:
@@ -44,11 +45,7 @@ def clean_pitch(pitch_angles, status_signals):
         else:
             cleaned_angles.append(angle)
     return cleaned_angles
-
 pitch_angles = [10, 95, 45, -5, 85]
 status_signals = [0, 1, 0, 2, 0]
-print("Starting Exercise 5")
-print(clean_pitch(pitch_angles, status_signals))
 
-print("Made changes to the file")
-#Some comment to add
+print(clean_pitch(pitch_angles, status_signals))
